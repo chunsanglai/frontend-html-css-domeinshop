@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -10,33 +11,107 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
+/* grijs #899CA0 en 
+donkergroen #1C2B32 */
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-
+body {
+    font-size: 16px;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+h1,h2,h3, p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1em;
+}
 
+h3 {
+    font-size: 1.5em;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
+.header {
+    background-image: url(../assets/images/mountains.jpg);
+    height: 600px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left; 
+}
 
+.header-container {
+    max-width: 1000px;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.header-title {
+    color: #1C2B32;
+    font-weight: 600;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+.header-sub {
+    display: block;
+    color: #1C2B32;
+    margin-bottom: 30px;
+}
+ 
+.header-input {
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid #1C2B32;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 200px
+}
+
+input.header-input:focus {
+    outline-width: 0;
+}
+
+::placeholder{
+    color: #1C2B32;
+}
+
+.header-button {
+    margin: -50px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #1C2B32;
+    border: 2px solid #1C2B32;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
 
-
+.main {
+    max-width: 1000px;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
